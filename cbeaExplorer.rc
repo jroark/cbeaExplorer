@@ -1,0 +1,209 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_ABOUT DIALOG DISCARDABLE  0, 0, 186, 89
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About CBEA Explorer 1.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,68,50,14
+    GROUPBOX        "Casio BE-300 Archive Explorer",IDC_STATIC,7,7,172,58
+    ICON            IDI_ICON_CASIO,IDC_STATIC,14,19,21,20
+    LTEXT           "Explore, extract, create, && install Casio BE-300 Archives.",
+                    IDC_STATIC,49,18,116,18
+    LTEXT           "Author: John Roark <jroark@cs.usfca.edu>",IDC_STATIC,14,
+                    48,157,8
+END
+
+IDD_DLG_NEW DIALOG DISCARDABLE  0, 0, 215, 174
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create a new cbea file"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,153,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,158,153,50,14
+    CONTROL         "Windows CE 3.00",IDC_RADIO_CE3,"Button",
+                    BS_AUTORADIOBUTTON,7,20,73,10
+    CONTROL         "Windows CE 4.00",IDC_RADIO_CE4,"Button",
+                    BS_AUTORADIOBUTTON,7,32,73,10
+    EDITTEXT        IDC_EDIT_NAME,7,58,106,13,ES_AUTOHSCROLL
+    CONTROL         "Both",IDC_RADIO_CEBOTH,"Button",BS_AUTORADIOBUTTON,7,44,
+                    31,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DLG_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_DLG_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New...",                     IDM_FILE_NEW
+        MENUITEM "&Open...",                    IDM_FILE_OPEN
+        MENUITEM "&Close",                      IDM_FILE_CLOSE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Extract...",                 IDM_FILE_EXTRACT, GRAYED
+        MENUITEM "Install...",                  IDM_FILE_INSTALL, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Save",                       IDM_FILE_SAVE, GRAYED
+        MENUITEM "Save &As...",                 IDM_FILE_SAVEAS, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Cut",                         IDM_EDIT_CUT, GRAYED
+        MENUITEM "Copy",                        IDM_EDIT_COPY, GRAYED
+        MENUITEM "Paste",                       IDM_EDIT_PASTE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Delete",                      IDM_EDIT_DELETE, GRAYED
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Icons",                       IDM_VIEW_ICONS
+        MENUITEM "List",                        IDM_VIEW_LIST
+        MENUITEM "Details",                     IDM_VIEW_DETAILS, CHECKED
+    END
+    MENUITEM "About...",                    IDM_ABOUT
+END
+
+IDR_MENU_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "_CONTEXT_"
+    BEGIN
+        MENUITEM "Cut",                         IDM_EDIT_CUT, GRAYED
+        MENUITEM "Copy",                        IDM_EDIT_COPY, GRAYED
+        MENUITEM "Paste",                       IDM_EDIT_PASTE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Delete",                      IDM_EDIT_DELETE, GRAYED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_TOOLBAR         BITMAP  DISCARDABLE     "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_CASIO          ICON    DISCARDABLE     "res\\casio.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      MOVEABLE PURE   "cbeaExplorer.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_INA
+//
+
+IDR_RT_30               RT_INA  DISCARDABLE     "res\\native_3.0.ina"
+IDR_RT_40               RT_INA  DISCARDABLE     "res\\native_4.0.ina"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
